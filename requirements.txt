@@ -3,3 +3,5 @@ pandas
 numpy
 scikit-learn
 scikit-surprise==1.1.3
+wheel
+setuptools
