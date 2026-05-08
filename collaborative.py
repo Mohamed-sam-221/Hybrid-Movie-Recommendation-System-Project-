@@ -1,7 +1,7 @@
 import pandas as pd
 from surprise import Dataset
 from surprise import Reader
-from surprise import SVD
+from sklearn.decomposition import TruncatedSVD
 from surprise.model_selection import train_test_split
 from surprise.accuracy import rmse, mae
 
