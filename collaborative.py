@@ -24,13 +24,7 @@ trainset, testset = train_test_split(
 )
 
 #  ONE MODEL ONLY (correct)
-svd_model = SVD(
-    n_factors=100,
-    n_epochs=20,
-    lr_all=0.005,
-    reg_all=0.02,
-    random_state=42
-)
+svd_model = TruncatedSVD(n_components=50)
 
 # Train
 svd_model.fit(trainset)
