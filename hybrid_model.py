@@ -1,10 +1,8 @@
 import pandas as pd
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
-from surprise import Dataset
 from surprise import Reader
-from surprise import SVD
-
+from sklearn.decomposition import TruncatedSVD
 # Load datasets
 movies_path = r"C:\Users\Sam\AppData\Roaming\JetBrains\PyCharm2025.3\scratches\ptoject intelegan sec\movies.csv"
 ratings_path = r"C:\Users\Sam\AppData\Roaming\JetBrains\PyCharm2025.3\scratches\ptoject intelegan sec\ratings.csv"
